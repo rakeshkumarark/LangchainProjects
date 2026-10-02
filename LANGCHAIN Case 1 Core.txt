@@ -1,0 +1,79 @@
+                    LANGCHAIN(Case-1)
+                        │
+                   Core Components
+       ┌────────────────┼────────────────┐
+       ↓                ↓                ↓
+   Models            Prompts          Output
+       │                │              Parsers
+       ↓                ↓                ↓
+   LLM / Chat       Templates        Structured
+   Models           Messages          Output
+       
+       
+       		   LANGCHAIN(Case-2)
+       		   	|
+       		   RAG Components	
+       ┌────────────────┼────────────────┐
+       ↓                ↓                ↓
+  Documents        Retrievers        Embeddings
+       │                │                │
+   PDF, TXT        Search data       Convert text
+   Web pages       from vector DB     → vectors
+
+
+		    LANGCHAIN(Case-3)
+		    	|
+		Agent Components
+       ┌────────────────┼────────────────┐
+       ↓                ↓                ↓
+      Tools           Agents            Memory/
+       │                │              State
+   APIs, DB, etc.   Decide which      Maintain
+                    tool to use       conversation
+
+                    ↓
+                   LCEL
+                    │
+              Connect components
+                 using `|`
+                 
+                 
+                 
+                 
+                 
+                 
+                                          LANGCHAIN
+                            │
+        ┌───────────────────┼───────────────────┐
+        ↓                   ↓                   ↓
+      CASE 1              CASE 2              CASE 3
+   Core Components      RAG Components     Agent Components
+        │                   │                   │
+   ┌────┼────┐        ┌─────┼─────┐       ┌────┼────┐
+   ↓    ↓    ↓        ↓     ↓     ↓       ↓    ↓    ↓
+ Models Prompts Output Documents Retrievers Embeddings Tools Agents Memory
+               Parsers
+               
+               
+               
+               
+               Jev vs LLMs — Different AI Tools, Different Jobs!
+
+An LLM like GPT, Claude, or Gemini is mainly a writer and generator.
+It can create text, explain concepts, summarize documents, write code, and answer questions.
+Jev, on the other hand, is designed as a fast decision-maker for software applications.
+It takes input and selects an option from a predefined set of choices.
+For example, it can classify a customer complaint as Billing, Technical, or Sales.
+Jev can also provide a confidence score along with the decision.
+The simple analogy is: LLM = Writer, Jev = Decision-Maker.
+An LLM is like a specialist who writes a detailed response to a customer.
+Jev is like a front-desk sorter who quickly routes the customer to the right department.
+LLMs are useful for writing, reasoning, summarization, coding, and conversational AI.
+Jev can be useful for classification, routing, moderation, and structured decisions.
+So, these technologies don't necessarily need to compete with each other.
+They can work together in the same AI application.
+
+
+Use a fast decision model when you need a clear, bounded choice.
+Use an LLM when you need language generation, explanation, or reasoning.
+
