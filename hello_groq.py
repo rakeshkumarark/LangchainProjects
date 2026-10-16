@@ -1,5 +1,5 @@
-GROQ_API_KEY="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"
-LANGSMITH_API_KEY="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"
+GROQ_API_KEY="xyz"
+LANGSMITH_API_KEY="xyz"
 
 from typing import TypedDict, Annotated
 from langgraph.graph import StateGraph, START, END
